@@ -42,6 +42,7 @@ $CONFIG->dbuser = 'comunitat';
  *
  * @global string $CONFIG->dbpass
  */
+
 $CONFIG->dbpass = 'comunitat';
 /**
  *
