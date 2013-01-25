@@ -119,3 +119,10 @@ $CONFIG->db_disable_query_cache = FALSE;
  * @global int $CONFIG->min_password_length
  */
 $CONFIG->min_password_length = 6;
+
+/**
+ * xLP: Email address from upc.edu
+ */
+$CONFIG->hooks['registeruser:validate:email']['all'][1] = function ($hook, $type, $returnvalue, $params) {
+	return $returnvalue && preg_match('/(@|\.)upc\.edu$/i', $params['email']);
+};
