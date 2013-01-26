@@ -127,3 +127,19 @@ $CONFIG->min_password_length = 6;
 $CONFIG->hooks['registeruser:validate:email']['all'][1] = function ($hook, $type, $returnvalue, $params) {
 	return $returnvalue && preg_match('/(@|\.)upc\.edu$/i', $params['email']);
 };
+
+/**
+ * xLP: Show information about email address from upc.edu
+ */
+$CONFIG->hooks['view']['register/extend']['1'] = function ($hook, $type, $returnvalue, $params) {
+  // we only want to alter when viewtype is "default"
+  if ($params['viewtype'] !== 'default') {
+		return $returnvalue;
+  }
+	switch (get_current_language()) {
+		case 'es':
+			return $returnvalue .'<p class="elgg-message elgg-state-notice">Con el fin de permitir el accesos sólo a miembros de la comunidad UPC, la dirección de correo tiene que pertenecer a la UPC.</p>';
+		default:
+			return $returnvalue .'<p class="elgg-message elgg-state-notice">Per tal de permetre l\'accés només a membres de la comunitat UPC, l\'adreça de correu ha de pertànyer a la UPC.</p>';
+	}
+};
