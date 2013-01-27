@@ -62,6 +62,11 @@ $catalan = array(
 	'groups:search:title' => "Cercar grups que coincideixin amb l&acute;etiqueta '%s'",
 	'groups:search:none' => "No s&acute;ha trobat cap grup",
 
+	/**
+ 	 * xLP: Translate 'groups:search_in_group'
+ 	 */
+	'groups:search_in_group' => 'Cercar al grup',
+
 	'groups:activity' => "Activitat del grup",
 	'groups:enableactivity' => 'Habilitar l&acute;activitat del grup',
 	'groups:activity:none' => "Encar no hi ha activitat al grup",

@@ -62,6 +62,12 @@ $spanish = array(
 	'groups:search:title' => "Buscar grupos que conicidan con el tag '%s'",
 	'groups:search:none' => "No se encontraron grupos",
 
+        /**
+         * xLP: Translate 'groups:search_in_group'
+         */
+        'groups:search_in_group' => 'Buscar en el grupo',
+
+
 	'groups:activity' => "Actividad del grupo",
 	'groups:enableactivity' => 'Habilitar la actividad del grupo',
 	'groups:activity:none' => "A&uacute;n no hay actividad en el grupo",
