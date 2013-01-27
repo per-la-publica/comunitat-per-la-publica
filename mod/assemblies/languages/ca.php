@@ -1,7 +1,6 @@
 <?php
 /**
- * Assembly Catalan language file.
- *
+ * xLP: Assembly Catalan language file.
  */
 
 $catalan = array(
