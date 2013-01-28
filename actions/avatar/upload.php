@@ -56,7 +56,7 @@ if (elgg_trigger_event('profileiconupdate', $owner->type, $owner)) {
 
 	$view = 'river/user/default/profileiconupdate';
 	elgg_delete_river(array('subject_guid' => $owner->guid, 'view' => $view));
-	add_to_river($view, 'update', $owner->guid, $owner->guid);
+	//add_to_river($view, 'update', $owner->guid, $owner->guid);
 }
 
 forward(REFERER);
