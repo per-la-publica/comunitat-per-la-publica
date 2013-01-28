@@ -11,7 +11,7 @@ echo '<div class="spotlight-column">';
 	),
 ));*/
 
-echo elgg_view('page/elements/spotlight/module', array(
+/*echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('Per la Pública'),
 	'items' => array(
 		'http://www.perlapublica.org/' => elgg_echo('about:blog'),
@@ -21,7 +21,7 @@ echo elgg_view('page/elements/spotlight/module', array(
 		'http://www.perlapublica.org/funcionament.html' => elgg_echo('Funcionament'),
 		'http://www.perlapublica.org/participa.html' => elgg_echo('Participa'),
 	),
-));
+));*/
 
 echo '</div><div class="spotlight-column">';
 
