@@ -67,7 +67,7 @@ echo elgg_view('page/elements/spotlight/module', array(
 		'members/online' => $online . ' ' .  elgg_echo('members:label:online'),
 		'groups/all'     => $groups . ' ' .  elgg_echo('item:group'),
 		'pages/all'      => $pages . ' ' .   elgg_echo('item:object:page'),
-		'blog/all'       => $blog . ' ' .    elgg_echo('item:object:blog'),
+		//'blog/all'       => $blog . ' ' .    elgg_echo('item:object:blog'),
 		'file/all'       => $file . ' ' .    elgg_echo('item:object:file'),
 		//'tidypics/all' => $photos . ' ' .  elgg_echo('item:object:photo'),
 	),
