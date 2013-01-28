@@ -19,7 +19,7 @@ echo elgg_view('page/elements/spotlight/module', array(
 		'http://http://www.perlapublica.org/ideari.html/' => elgg_echo('Ideari'),
 		'http://http://www.perlapublica.org/manifest.html/' => elgg_echo('Manifest'),
 		'http://http://www.perlapublica.org/funcionament.html/' => elgg_echo('Funcionament'),
-		'http://http://www.perlapublica.org/participa.html/' => elgg_echo('Prticipa'),
+		'http://http://www.perlapublica.org/participa.html/' => elgg_echo('Participa'),
 	),
 ));
 
@@ -28,18 +28,17 @@ echo '</div><div class="spotlight-column">';
 echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('contact:contact'),
 	'items' => array(
-		'http://www.perlapublica.org/contacta.html' => elgg_echo('contact:mailing'),
+		'http://www.perlapublica.org/contacta.html' => elgg_echo('Correu electrònic'),
 	),
 ));
 
-echo elgg_view('page/elements/spotlight/module', array(
-	'title' => elgg_echo('help:help'),
+/*	'title' => elgg_echo('help:help'),
 	'items' => array(
 		'https://n-1.cc/pg/faq/' => elgg_echo('help:faq'),
 		'https://n-1.cc/pg/dokuwiki/9394' => elgg_echo('help:howto'),
 		'https://n-1.cc/pg/groups/9394/help/' => elgg_echo('help:group'),
 	),
-));
+));*/
 
 echo '</div><div class="spotlight-column">';
 
