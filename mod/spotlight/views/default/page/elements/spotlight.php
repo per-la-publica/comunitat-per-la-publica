@@ -15,11 +15,11 @@ echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('Per la Pública'),
 	'items' => array(
 		'http://www.perlapublica.org/' => elgg_echo('about:blog'),
-		'http://www.perlapublica.org/carta.html/' => elgg_echo('Carta de presentació'),
-		'http://www.perlapublica.org/ideari.html/' => elgg_echo('Ideari'),
-		'http://www.perlapublica.org/manifest.html/' => elgg_echo('Manifest'),
-		'http://www.perlapublica.org/funcionament.html/' => elgg_echo('Funcionament'),
-		'http://www.perlapublica.org/participa.html/' => elgg_echo('Participa'),
+		'http://www.perlapublica.org/carta.html' => elgg_echo('Carta de presentació'),
+		'http://www.perlapublica.org/ideari.html' => elgg_echo('Ideari'),
+		'http://www.perlapublica.org/manifest.html' => elgg_echo('Manifest'),
+		'http://www.perlapublica.org/funcionament.html' => elgg_echo('Funcionament'),
+		'http://www.perlapublica.org/participa.html' => elgg_echo('Participa'),
 	),
 ));
 
