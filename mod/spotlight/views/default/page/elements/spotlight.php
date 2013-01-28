@@ -4,19 +4,22 @@ echo '<div class="spotlight clearfloat">';
 
 echo '<div class="spotlight-column">';
 
-echo elgg_view('page/elements/spotlight/module', array(
+/*echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('news:news'),
 	'items' => array(
 		'https://n-1.cc/pg/pages/view/9385/' => elgg_echo('news:features'),
 	),
-));
+));*/
 
 echo elgg_view('page/elements/spotlight/module', array(
-	'title' => elgg_echo('about:lorea'),
+	'title' => elgg_echo('Per la Pública'),
 	'items' => array(
-		'https://lorea.org/' => elgg_echo('about:blog'),
-		'https://n-1.cc/pg/groups/7826/lorea/' => elgg_echo('about:group'),
-		elgg_echo('lorea:sustainability:url') => elgg_echo('lorea:sustainability'),
+		'http://www.perlapublica.org/' => elgg_echo('about:blog'),
+		'http://http://www.perlapublica.org/carta.html/' => elgg_echo('Carta de presentació'),
+		'http://http://www.perlapublica.org/ideari.html/' => elgg_echo('Ideari'),
+		'http://http://www.perlapublica.org/manifest.html/' => elgg_echo('Manifest'),
+		'http://http://www.perlapublica.org/funcionament.html/' => elgg_echo('Funcionament'),
+		'http://http://www.perlapublica.org/participa.html/' => elgg_echo('Prticipa'),
 	),
 ));
 
@@ -25,7 +28,7 @@ echo '</div><div class="spotlight-column">';
 echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('contact:contact'),
 	'items' => array(
-		'https://lists.rhizomatik.net/listinfo/mycelia-community' => elgg_echo('contact:mailing'),
+		'http://www.perlapublica.org/contacta.html' => elgg_echo('contact:mailing'),
 	),
 ));
 
@@ -43,10 +46,10 @@ echo '</div><div class="spotlight-column">';
 echo elgg_view('page/elements/spotlight/module', array(
 	'title' => elgg_echo('dev:dev'),
 	'items' => array(
-		'https://n-1.cc/pg/groups/6217/bughunting/' => elgg_echo('dev:bughunting'),
-		'https://n-1.cc/pg/groups/5241/testers-de-la-red-social/' => elgg_echo('dev:testers'),
-		'https://dev18.lorea.org/' => elgg_echo('dev:network'),
-		'https://gitorious.org/lorea/'=> elgg_echo('dev:repo'),
+		//'https://n-1.cc/pg/groups/6217/bughunting/' => elgg_echo('dev:bughunting'),
+		//'https://n-1.cc/pg/groups/5241/testers-de-la-red-social/' => elgg_echo('dev:testers'),
+		//'https://dev18.lorea.org/' => elgg_echo('dev:network'),
+		'https://github.com/per-la-publica/comunitat-per-la-publica/'=> elgg_echo('dev:repo'),
 		
 	),
 ));
