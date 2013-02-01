@@ -1,0 +1,17 @@
+<?php
+
+$catalan = array(
+  'member_selfdelete' => "Autoeliminació compte",
+  'member_selfdelete:account:delete' => "Eliminar Compte",
+  'member_selfdelete:invalid:confirmation' => "Confirmació no vàlida - és necessàri introduir la paraula %s a la casella de confirmació per eliminar el teu compte",
+  'member_selfdelete:DELETE' => "DELETE",
+  'member_selfdelete:deleted' => "El teu compte ha estat esborrat",
+  'member_selfdelete:disclaimer' => "Aqui pots eliminar el teu compte, tingueu en compte que això <b>no es pot desfer</b> - tota la teva informació i el contingut serà eliminat definitivament.  Si no desitges eliminar el teu compte, simplement surt d'aquesta pàgina.",
+  'member_selfdelete:feedback:thanks' => "Es trists veure't marxar, però gràcies per deixar-nos comentaris.",
+  'member_selfdelete:label:reason' => "Opcional: Si us plau, explica'ns el motiu pel qual et dones de baixa.",
+  'member_selfdelete:label:confirmation' => "Per confirmar que tens la intenció d'eliminar el teu compte escri la paraula \"%s\"",
+  'member_selfdelete:reasons:list' => "Comentari d'usuari d'Autoeliminació",
+  'member_selfdelete:submit' => "Trametre",
+);
+					
+add_translation("ca",$catalan);
