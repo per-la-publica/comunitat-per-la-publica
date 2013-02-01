@@ -137,9 +137,17 @@ $CONFIG->hooks['view']['register/extend']['1'] = function ($hook, $type, $return
 		return $returnvalue;
   }
 	switch (get_current_language()) {
-		case 'es':
-			return $returnvalue .'<p class="elgg-message elgg-state-notice">Con el fin de permitir el accesos sólo a miembros de la comunidad UPC, la dirección de correo tiene que pertenecer a la UPC.</p>';
+        case 'es':
+			return $returnvalue.
+'<div class="elgg-message elgg-state-notice">'.
+'<p>Con el fin de permitir el accesos sólo a miembros de la comunidad UPC, la dirección de correo tiene que pertenecer a la UPC.</p>'.
+'<p>Al finalizar el registro, recibirás en unos minutos un correo de confirmación en tu correo.</p>'.
+'</div>';
 		default:
-			return $returnvalue .'<p class="elgg-message elgg-state-notice">Per tal de permetre l\'accés només a membres de la comunitat UPC, l\'adreça de correu ha de pertànyer a la UPC.</p>';
+			return $returnvalue.
+'<div class="elgg-message elgg-state-notice">'.
+'<p>Per tal de permetre l\'accés només a membres de la comunitat UPC, l\'adreça de correu ha de pertànyer a la UPC.</p>'.
+'<p>Al finalitzar el registre, rebràs en uns minuts un email de conformació al teu correu.</p>'.
+'</div>';
 	}
 };
