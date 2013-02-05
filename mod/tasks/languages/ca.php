@@ -12,8 +12,8 @@ $catalan = array(
 	 */
 
 	'tasks' => "Tasques",
-	'tasks:owner' => "%s's tasks",
-	'tasks:friends' => "Friends' tasks",
+	'tasks:owner' => "Tasques de %s",
+	'tasks:friends' => "Tasques dels amics",
 	'tasks:all' => "Totes les tasques del lloc",
 	'tasks:add' => "Afegir tasca",
 	'tasks:addlist' => "Afegir llista",
