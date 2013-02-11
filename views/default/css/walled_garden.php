@@ -9,7 +9,7 @@ $url = elgg_get_site_url();
 .elgg-body-walledgarden {
 	margin: 100px auto 0 auto;
 	position: relative;
-	width: 530px;
+	width: 940px;
 }
 .elgg-module-walledgarden {
 	position: absolute;
@@ -25,52 +25,6 @@ $url = elgg_get_site_url();
 .elgg-module-walledgarden > .elgg-foot {
 	height: 17px;
 }
-.elgg-walledgarden-double > .elgg-head {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/two_column_top.png) no-repeat left top;
-}
-.elgg-walledgarden-double > .elgg-body {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/two_column_middle.png) repeat-y left top;
-}
-.elgg-walledgarden-double > .elgg-foot {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/two_column_bottom.png) no-repeat left top;
-}
-.elgg-walledgarden-single > .elgg-head {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/one_column_top.png) no-repeat left top;
-}
-.elgg-walledgarden-single > .elgg-body {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/one_column_middle.png) repeat-y left top;
-}
-.elgg-walledgarden-single > .elgg-foot {
-	background: url(<?php echo $url; ?>_graphics/walled_garden/one_column_bottom.png) no-repeat left top;
-}
-
-.elgg-col > .elgg-inner {
-	margin: 0 0 0 5px;
-}
-.elgg-col:first-child > .elgg-inner {
-	margin: 0 5px 0 0;
-}
-.elgg-col > .elgg-inner {
-	padding: 0 8px;
-}
-
-.elgg-walledgarden-single > .elgg-body {
-	padding: 0 18px;
-}
-
-.elgg-module-walledgarden-login {
-	margin: 0;
-}
-.elgg-body-walledgarden h3 {
-	font-size: 1.5em;
-	line-height: 1.1em;
-	padding-bottom: 5px;
-}
-
-.elgg-heading-walledgarden {
-	margin-top: 60px;
-	line-height: 1.1em;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	color: #666;
@@ -79,3 +33,43 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	color: #999;
 }
+
+.wrapper{
+   width: 100%;
+   margin: 0 auto;
+}
+.header{
+   float: left;
+   width: 100%;
+   background-color: #fffff4
+}
+.wrapright{
+   float: left;
+   width: 100%;
+   background-color: #ffffff;
+}
+.right{
+   margin-left: 707px;
+   padding: 0 10px;
+   background-color: #ffffff;
+   height: 200px; 
+}
+.left{
+   float: left;
+   width: 697px;
+   margin-left: -100%;
+   background-color: #ffffff;
+   height: 500px;
+}
+.footer{
+   float: right;
+   width: 100%;
+   background-color: #ffffff;
+   border: 5px
+}
+body {
+   padding: 0px;
+   margin: 0px;
+}
+ 
+ 
