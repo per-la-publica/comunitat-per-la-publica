@@ -15,20 +15,21 @@ $menu = elgg_view_menu('walled_garden', array(
 $login_box = elgg_view('core/account/login_box', array('module' => 'walledgarden-login'));
 
 echo <<<HTML
-
 <div class="wrapper">
-    <div class="header" style="margin-bottom:1em">
-     	<h1>$welcome</h1>	         
-    </div> 
-    <div class="wrapright"> 	  
-	    <div class="right">
+	<div class="header" style="margin-bottom:1em">
+  	<h1>$welcome</h1>	         
+	</div> 
+  <div class="wrapright"> 	  
+		<div class="right">
  			$login_box
-        </div>
+		</div>
 	</div>    
-	<div class="left" >
-        <iframe width=700 height=500 scrolling="no" src="/static/login_slides.php" style="overflow:hidden;" frameborder="0"></iframe>
-	    <div class="footer">
-     		$menu
-	    </div>     
-    </div>
+	<div class="wrapleft" >
+		<div class="left">
+		<iframe style="width:700px;height:500px;" scrolling="no" src="/static/login_slides.php" frameborder="0"></iframe>
+		</div>
+	  <div class="footer">
+    	$menu
+		</div>     
+	</div>
 HTML;
