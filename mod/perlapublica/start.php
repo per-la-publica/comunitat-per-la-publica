@@ -36,12 +36,12 @@
         $infoUpc = '';
 				switch (get_current_language()) {
 					case 'es':
-						$infoUpc = '<p>Con el fin de permitir el accesos sólo a miembros de la comunidad UPC, la dirección de correo tiene que pertenecer a la UPC.</p>'.
-						           '<p>Al finalizar el registro, recibirás, en unos minutos, un correo de confirmación en tu correo.</p>';
+						$infoUpc = '<p>Con el fin de permitir el accesos sólo a miembros de la comunidad UPC, la dirección de correo tiene que pertenecer a la UPC.<br />'.
+						           'Al finalizar el registro, recibirás, en unos minutos, un correo de confirmación en tu correo.</p>';
 						break;
 					default:
-						$infoUpc = '<p>Per tal de permetre l\'accés només a membres de la comunitat UPC, l\'adreça de correu ha de pertànyer a la UPC.</p>'.
-					             '<p>Al finalitzar el registre, rebràs, en uns minuts, un email de confirmació al teu correu.</p>';
+						$infoUpc = '<p>Per tal de permetre l\'accés només a membres de la comunitat UPC, l\'adreça de correu ha de pertànyer a la UPC.<br />'.
+					             'Al finalitzar el registre, rebràs, en uns minuts, un email de confirmació al teu correu.</p>';
 	    }
         return '<div class="elgg-message elgg-state-notice" style="margin-top:1em">'.$infoUpc.'</div>'.$returnvalue;
       
