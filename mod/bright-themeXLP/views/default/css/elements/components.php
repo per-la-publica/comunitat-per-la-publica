@@ -166,7 +166,7 @@
 	background-color: #e10;
 }
 .elgg-state-notice {
-	background-color: #06d;
+	background-color: #5c2d87;
 }
 
 

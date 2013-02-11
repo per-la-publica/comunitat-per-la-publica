@@ -24,13 +24,14 @@ fieldset > div:last-child {
 label {
 	font-weight: bold;
 	color: #222;
+	color: #28133a;
 }
 
 input,
 textarea {
 	font-family: "Trebuchet MS", Arial, Tahoma, Verdana, sans-serif;
   font-size: 1.1em;
-	color: #666;
+	color: #673196;
 	border: 1px solid #ccc;
 	padding: 5px;
 	width: 100%;	
@@ -50,7 +51,7 @@ textarea:hover {
 input:focus, 
 textarea:focus {
 	border-color: #6b0094; /*#28f;*/
-	color:#222;
+	color:#673196;
 
 	-webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
