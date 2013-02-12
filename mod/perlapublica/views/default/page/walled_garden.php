@@ -31,25 +31,10 @@
 			</div>    
 			<div class="wrapleft" >
 				<div class="left"><iframe style="width:700px;height:500px;" scrolling="no" src="/static/login_slides.php" frameborder="0"></iframe></div>
-				<div class="footer"><?php echo $menu; ?>	</div>
 			</div>
+			<div class="footer" style="clear:both;float:none"><?php echo $menu; ?></div>
 		</div>
 	</div>
 	<?php echo elgg_view('page/elements/foot'); ?>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
