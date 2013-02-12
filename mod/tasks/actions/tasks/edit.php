@@ -101,7 +101,7 @@ if ($task->save()) {
 		$task_json[$v] = $task->$v;
 	}
 	$task_json['list_guid'] = $task->list_guid;
-	echo json_encode($task_json); 
+	// xLP -- Evitar l'error del forward --  echo json_encode($task_json); 
 	
 	forward($task->getURL());
 } else {

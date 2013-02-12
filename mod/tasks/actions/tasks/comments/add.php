@@ -146,7 +146,7 @@ if (!in_array($state_action, array('activate', 'deactivate'))) {
 }
 
 if ($new_state) {
-	echo "{\"new_state\": \"$new_state\"}";
+	// xLP -- Evitar el problema del forward  -- echo "{\"new_state\": \"$new_state\"}";
 }
 
 // Forward to the page the action occurred on
