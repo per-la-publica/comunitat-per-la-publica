@@ -10,8 +10,13 @@
 		if (is_array($type)) {
 			$type = elgg_extract('output_view', $type, elgg_extract('type', $type));
 		}
-		
-		$value = $entity->$name;
+
+		/* TCG patch to avoid wrong dates in Assemblies object view */
+		if($object_subtype=="assembly" && $type == "date"){
+        	$value = date("d.m.y" , $entity->$name);
+        } else {
+            $value = $entity->$name;
+        }   
 		
 		if (in_array($name, array('title', 'description', 'access_id'))) {
 			continue;
