@@ -35,7 +35,9 @@ foreach ($variables as $name => $field) {
 		$input[$name] = string_to_tag_array($input[$name]);
 	}
 	if ($type == 'date') {
-		$input[$name] = strtotime($input[$name]." ".date_default_timezone_get());
+		// xLP - Save date as UTC
+		// $input[$name] = strtotime($input[$name]." ".date_default_timezone_get());
+		$input[$name] = strtotime($input[$name]." UTC");
 	}
 }
 
