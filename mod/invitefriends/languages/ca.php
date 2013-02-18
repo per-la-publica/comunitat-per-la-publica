@@ -17,7 +17,7 @@ $catalan = array(
 	 'invitefriends:message:default'  =>  "Hola,
 
 et vull convidar a entrar a la xarxa %s." , 
-	 'invitefriends:email'  =>  "Et convida a participar a la %s en/na %s. 'T'envia aquest missatge:
+	 'invitefriends:email'  =>  "Et convida a participar a la %s en/na %s. T'envia aquest missatge:
 
 %s
 
