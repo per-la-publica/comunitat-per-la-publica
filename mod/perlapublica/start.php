@@ -21,9 +21,21 @@
         elgg_register_plugin_hook_handler('register', 'user', 'xlp_save_initial_email');
         elgg_register_plugin_hook_handler('registeruser:validate:email', 'all', 'xlp_filter_upc_address');
         elgg_register_plugin_hook_handler('view', 'register/extend', 'xlp_filter_upc_address_information');
+        elgg_register_plugin_hook_handler('creating', 'river', 'xlp_filter_river');
     }
 
     elgg_register_event_handler('init', 'system', 'xlp_init');
+
+    /**
+     * Don't show user updates in activity stream
+     */
+    function xlp_filter_river($hook, $type, $returnvalue, $params) {
+        if ($returnvalue['type'] == 'user' && 
+            ($returnvalue[action_type] == 'update' || $returnvalue[action_type] == 'friend')) {
+            return false;
+        }
+        return $returnvalue;
+    }
 
     /**
      * Show information about email address from upc.edu
