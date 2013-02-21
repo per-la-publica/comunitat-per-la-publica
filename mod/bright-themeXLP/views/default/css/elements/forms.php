@@ -10,6 +10,12 @@
 /* ***************************************
 	Form Elements
 *************************************** */
+.elgg-form-login > fieldset > div {
+  float: left;
+	margin-bottom: 0.3em;
+  margin-right: 1em;
+}
+
 fieldset > div {
 	margin-bottom: 15px;
 }
@@ -91,7 +97,6 @@ input[type="radio"] {
 }
 
 .elgg-form-login, .elgg-form-account {
-	max-width: 450px;
 }
 
 
