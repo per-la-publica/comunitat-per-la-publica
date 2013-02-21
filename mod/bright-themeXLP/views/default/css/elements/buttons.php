@@ -35,7 +35,7 @@
   color: #222;
 	text-shadow: 0px 1px 1px #fff;
   border: 1px solid #888;
-	background: #fff url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/button.png) repeat-x left top;
+	background: #fff url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/button.png) repeat-x left top;
 }
 
 .elgg-button:hover {
@@ -44,7 +44,7 @@
 }
 
 .elgg-button:active {
-	background-image: url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/button-active.png);
+	background-image: url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/button-active.png);
   background-position: left bottom;
 
 	-webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -142,7 +142,7 @@
 }
 
 .elgg-button-dropdown.elgg-state-active {
-	background: #ccc url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/button-active.png) repeat-x left bottom;
+	background: #ccc url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/button-active.png) repeat-x left bottom;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
   -moz-border-radius-bottomright: 0;

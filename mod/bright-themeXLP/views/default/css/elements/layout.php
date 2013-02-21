@@ -23,7 +23,7 @@
 	width: 990px;
 	height: 80px;
 	margin: 0 auto;
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/header-gradients.png) no-repeat top left;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/header-gradients.png) no-repeat top left;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
 	width: 990px;
@@ -38,7 +38,7 @@
 
 /***** TOPBAR ******/
 .elgg-page-topbar {
-	background: #444 url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/topbar.png) repeat-x bottom left;
+	background: #444 url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/topbar.png) repeat-x bottom left;
 	border-bottom: 1px solid #000;
 	position: relative;
 	z-index: 9000;
@@ -69,7 +69,7 @@
 /***** PAGE HEADER ******/
 .elgg-page-header {
 	position: relative;
-	background: #6b0094; /*#6b0094; /*#05d;*/*/ url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/header.png) repeat-x top left;
+	background: #6b0094; /*#6b0094; /*#05d;*/*/ url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/header.png) repeat-x top left;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
@@ -81,10 +81,10 @@
 	min-height: 360px;
 }
 .elgg-layout-one-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/sidebar.png) repeat-y right top;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/sidebar.png) repeat-y right top;
 }
 .elgg-layout-two-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/sidebar-double.png) repeat-y right top;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/sidebar-double.png) repeat-y right top;
 }
 .elgg-layout-error {
 	margin-top: 20px;
@@ -118,7 +118,7 @@
 	position: relative;
 }
 .elgg-page-footer {
-	background: #222 url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/footer.png) repeat-x left top;
+	background: #222 url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/footer.png) repeat-x left top;
 	border-top: 1px solid #333;
 	color: #aaa;
 	text-shadow: 0px 1px 1px #000;

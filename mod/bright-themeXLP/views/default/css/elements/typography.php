@@ -99,14 +99,14 @@ h6 { font-size: 0.8em; }
 	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 
-  /*background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/logo.png) no-repeat 0px 15px; */
+  /*background: transparent url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/logo.png) no-repeat 0px 15px; */
   /*padding: 1px 1px 10px 65px;*/
   /*margin: 1px;*/
 }
 
 .elgg-heading-site:hover {
 	text-shadow: 0px 0px 10px #fff;
- /* background-image: url(<?php echo elgg_get_site_url(); ?>mod/bright-theme/graphics/logo-hover.png);*/
+ /* background-image: url(<?php echo elgg_get_site_url(); ?>mod/bright-themeXLP/graphics/logo-hover.png);*/
 }
 
 .elgg-heading-main {
