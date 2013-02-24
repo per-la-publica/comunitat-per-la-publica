@@ -15,8 +15,8 @@
    <div class=row-fluid>
 		<div id="carousel" class="carousel slide">
   			<div class="carousel-inner">   				
-    			<div class="active item"><img src="screenshots/1.png"></div>
-    			<div class="item"><img src="screenshots/2.png"></div>
+    			<div class="active item"><img src="screenshots/2.png"></div>
+    			<div class="item"><img src="screenshots/4.png"></div>
     			<div class="item"><img src="screenshots/3.png"></div>
   			</div>
   			<!-- Carousel nav -->
