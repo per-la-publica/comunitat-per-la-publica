@@ -16,20 +16,15 @@ $options = array(
 	'order_by' => 'time_created DESC',
 );
 
+if ($show_add_form) {
+	$form_vars = array('class' => 'mtm');
+	echo elgg_view_form('discussion/reply/save', $form_vars, $vars);
+}
+
 $html = elgg_list_annotations($options);
 if ($html) {
-	if ($show_add_form) {
-		$form_vars = array('class' => 'mtm');
-		echo elgg_view_form('discussion/reply/save', $form_vars, $vars);
-	}
 	echo '<h3 class="mtm">' . elgg_echo('group:replies') . '</h3>';
 	echo $html;
-}
-else {
-	if ($show_add_form) {
-		$form_vars = array('class' => 'mtm');
-		echo elgg_view_form('discussion/reply/save', $form_vars, $vars);
-	}
 }
 
 echo '</div>';
