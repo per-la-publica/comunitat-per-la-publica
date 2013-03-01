@@ -27,7 +27,7 @@
 	<ul class="elgg-menu elgg-menu-general" style="clear:right;">
 		<?php if (elgg_get_config('allow_registration')) : ?>
 		<li style="">
-			<a class="registration_link" href="<?php echo elgg_get_site_url(); ?>'register">
+			<a class="registration_link" href="<?php echo elgg_get_site_url(); ?>register">
 				<span class="elgg-button elgg-button-submit"><?php echo elgg_echo('register'); ?></span>
 			</a>
 		</li>
