@@ -6,7 +6,15 @@
 
 $user = elgg_get_page_owner_entity();
 
-$profile_fields = array_merge(array('initial_email' => 'email'), elgg_get_config('profile_fields'));
+if ($user->username != 'admin') {
+	// Modificació temporal que permet copiar l'email de l'usuari al seu email inicial en cas que aquest no existeixi
+	if (empty($user->initial_email) && !empty($user->email)) {
+		$user->initial_email = $user->email;
+		$user->save();
+	}
+
+	$profile_fields = array_merge(array('initial_email' => 'email'), elgg_get_config('profile_fields'));
+}
 
 echo '<div id="profile-details" class="elgg-body pll">';
 echo "<h2>{$user->name}</h2>";
