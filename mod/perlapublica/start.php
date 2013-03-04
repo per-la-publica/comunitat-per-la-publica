@@ -7,9 +7,10 @@
 	 * @link http://www.perlapublica.org
 	 *
  	 * Select SQL to get all initial emails in database
-	 * > SELECT u.username, s1.string, s2.string 
-	 * > FROM users_entity u, metadata d, metastrings s1, metastrings s2 
-	 * > WHERE u.guid = d.entity_guid AND d.name_id = s1.id AND s1.string = 'initial_email' AND d.value_id = s2.id;
+   *
+				SELECT u.username, s1.string, s2.string 
+				FROM users_entity u, metadata d, metastrings s1, metastrings s2 
+				WHERE u.guid = d.entity_guid AND d.name_id = s1.id AND s1.string = 'initial_email' AND d.value_id = s2.id;
 	 *
 	 * TODO: Pendent de utilitzar el sistema i18n de l'elgg.
 	 */
