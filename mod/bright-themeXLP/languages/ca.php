@@ -4,7 +4,7 @@
  */
 
 $catalan = array(
-	'profile:initial_email' => 'Correu UPC',
+	'profile:initial_email' => 'Correu de registre',
 );
 
 add_translation('ca', $catalan);

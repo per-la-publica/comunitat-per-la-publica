@@ -4,7 +4,7 @@
  */
 
 $english = array(
-	'profile:initial_email' => 'UPC email',
+	'profile:initial_email' => 'Register email',
 );
 
 add_translation('en', $english);

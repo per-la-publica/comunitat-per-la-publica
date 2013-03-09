@@ -4,7 +4,7 @@
  */
 
 $spanish = array(
-	'profile:initial_email' => 'Correo UPC',
+	'profile:initial_email' => 'Correo de registro',
 );
 
 add_translation('es', $spanish);
