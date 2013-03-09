@@ -9,6 +9,11 @@ $profile_fields = elgg_get_config('profile_fields');
 $logged_user = get_loggedin_user();
 
 if ($logged_user->isAdmin()) {
+	// Modificació temporal que permet copiar l'email de l'usuari al seu email inicial en cas que aquest no existeixi
+	if (empty($user->initial_email) && !empty($user->email)) {
+		$user->initial_email = $user->email;
+		$user->save();
+	}
 	$profile_fields = array_merge(array('initial_email' => 'email'), $profile_fields);
 }
 
