@@ -1,3 +1,4 @@
+/*
 #contactus legend, h2
 {
    font-family : Arial, sans-serif;
@@ -30,29 +31,11 @@
    border-radius: 5px;   
 }
 
-#contactus textarea
-{
-  height:120px;
-  width:310px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-   border-radius: 8px;  
-}
-
-#contactus input[type="text"]:focus,textarea:focus
-{
-  color : #009;
-  border : 1px solid #990000;
-  background-color : #ffff99;
-  font-weight:bold;
-}
-
-#contactus .container
 {
    margin-top:8px;
    margin-bottom: 10px;
 }
-
+/*
 #contactus .error
 {
    font-family: Verdana, Arial, sans-serif; 
@@ -70,7 +53,7 @@
    border-bottom:0;
    width:350px;
 }
-
+/*
 #contactus fieldset#antispam legend
 {
    font-family : Arial, sans-serif;
@@ -104,4 +87,4 @@
 #fg_crdiv p
 {
     display:none;
-}
+}*/
