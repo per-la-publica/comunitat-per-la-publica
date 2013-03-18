@@ -8,8 +8,8 @@
 	elgg_register_css('contact', elgg_get_site_url().'mod/xlp-contact/contact.css');
 	elgg_load_css('contact');
 
-	$title = elgg_echo("xlp-contact:contactus");
-	$body  = elgg_view("xlp-contact/contactform"); 
+	$title = elgg_echo("xlp-contact:thanks"); 
+	$body  = elgg_view("xlp-contact/thankyou");
 
 	echo elgg_view_page($title, $body);
 ?>
