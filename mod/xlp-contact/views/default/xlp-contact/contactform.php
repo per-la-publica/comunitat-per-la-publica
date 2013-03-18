@@ -1,13 +1,12 @@
 <?php 
 require_once("./include/fgcontactform.php");
 require_once("./include/simple-captcha.php");
+$email = elgg_get_plugin_setting('email','xlp-contact');
 
-$email = elgg_get_plugin_setting('email', 'contact');
 $formproc = new FGContactForm();
 $sim_captcha = new FGSimpleCaptcha('scaptcha');
 
 $formproc->EnableCaptcha($sim_captcha);
-
 $formproc->AddRecipient($email);
 // For better security. Get a random tring from this link: http://tinyurl.com/randstr and put it here
 $formproc->SetFormRandomKey('CnRrspl1FyEylUj');
@@ -57,6 +56,7 @@ if(isset($_POST['submitted'])) {
 		</div>
 
 	</fieldset>
+
 </form>
 <script type="text/javascript">
     var frmvalidator = new Validator("contactus");

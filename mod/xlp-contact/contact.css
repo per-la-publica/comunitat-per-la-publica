@@ -41,6 +41,7 @@
 	-moz-opacity: .2;
 	filter: alpha(opacity=20);   
 }
+
 #fg_crdiv p {
 	display:none;
 }
