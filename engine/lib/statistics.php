@@ -96,11 +96,15 @@ function get_number_users($show_deactivated = false) {
   */
 function get_online_users() {
 	$count = find_active_users(600, 10, 0, true);
-	$objects = find_active_users(600, 10);
+	$objects = find_active_users(600, 10, get_input('offset') );
 
 	if ($objects) {
 		return elgg_view_entity_list($objects, array(
+			'offset' => (int) max(get_input('offset', 0), 0),
 			'count' => $count,
+			'full_view' => TRUE,
+	                'list_type_toggle' => FALSE,
+        	        'pagination' => TRUE,
 			'limit' => 10
 		));
 	}
