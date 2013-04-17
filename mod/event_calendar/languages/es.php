@@ -38,6 +38,7 @@ $language = array (
   'event_calendar:day_label' => 'Día',
   'event_calendar:week_label' => 'Semana',
   'event_calendar:month_label' => 'Mes',
+  'event_calendar:currentText' => "Hoy",
   'event_calendar:group' => 'Calendario de grupo',
   'event_calendar:new' => 'Agregar evento',
   'event_calendar:submit' => 'Enviar',

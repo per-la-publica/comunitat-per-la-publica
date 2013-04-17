@@ -154,8 +154,8 @@ handleViewDisplay = function(view) {
 	//$(".fc-widget-content[data-date='20120105']")
 }
 
-fullcalendarInit = function() {	
-	
+fullcalendarInit = function() {
+
 	var loadFullCalendar = function() {
 		var locale = $.datepicker.regional[elgg.config.language];
 		if (!locale) {
@@ -185,7 +185,8 @@ fullcalendarInit = function() {
 			dayNames: locale.dayNames,
 			dayNamesShort: locale.dayNamesShort,
 			buttonText: {
-				today: locale.currentText,
+//				today: locale.currentText,
+				today: elgg.echo('event_calendar:currentText'),
 				month: elgg.echo('event_calendar:month_label'),
 				week: elgg.echo('event_calendar:week_label'),
 				day: elgg.echo('event_calendar:day_label')
@@ -195,6 +196,7 @@ fullcalendarInit = function() {
 	}
 	
 	elgg.get({
+//		url: elgg.config.wwwroot + 'vendors/jquery/i18n/jquery.ui.datepicker-'+ elgg.get_language() +'.js',
 		url: elgg.config.wwwroot + 'vendors/jquery/i18n/jquery.ui.datepicker-'+ elgg.get_language() +'.js',
 		dataType: "script",
 		cache: true,

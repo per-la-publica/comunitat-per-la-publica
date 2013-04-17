@@ -48,6 +48,7 @@
 	'event_calendar:day_label' => "Day",
 	'event_calendar:week_label' => "Week",
 	'event_calendar:month_label' => "Month",
+	'event_calendar:currentText' => "Today",
 	'event_calendar:group' => "Group calendar",
 	'event_calendar:new' => "Add event",
 	'event_calendar:submit' => "Save and Continue",

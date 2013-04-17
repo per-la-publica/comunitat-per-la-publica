@@ -45,6 +45,7 @@
 	'event_calendar:day_label' => "Dia",
 	'event_calendar:week_label' => "Setmana",
 	'event_calendar:month_label' => "Mes",
+	'event_calendar:currentText' => "Avui",
 	'event_calendar:group' => "Calendari del grup",
 	'event_calendar:new' => "Afegir esdeveniment",
 	'event_calendar:submit' => "Desar i continuar",
