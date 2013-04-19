@@ -99,18 +99,21 @@ function event_calendar_set_event_from_form($event_guid,$group_guid) {
 
 	if ($schedule_type != 'poll') {
 		$start_date_text = trim(get_input('start_date'));
-		/*$event->original_start_date = get_input('start_date');
-		//$end_date = trim(get_input('end_date',''));
-		// convert start date from current server time to GMT
-		$start_date_text = gmdate("Y-m-d",$start_date);
+		// TCG patch:
+		$start_date_text_o = DateTime::createFromFormat('d/m/Y', $start_date_text);
+		$start_date_text   = $start_date_text_o->format("Y-m-d");
 		//$event->munged_start_date_string = $start_date_text." ".date_default_timezone_get();*/
 		
 		// TODO: is the timezone bit necessary?
-		$event->start_date = strtotime($start_date_text." ".date_default_timezone_get());
-		$end_date_text = trim(get_input('end_date',''));
+		//$event->start_date = strtotime($start_date_text." ".date_default_timezone_get());
+		$event->start_date = strtotime($start_date_text." UTC");
+		$end_date_text = trim(get_input('end_date'));
 		//$event->original_end_date = get_input('end_date');
 		if ($end_date_text) {	
-			$event->end_date = strtotime($end_date_text." ".date_default_timezone_get());
+			$end_date_text_o = DateTime::createFromFormat('d/m/Y', $end_date_text);
+			$end_date_text   = $end_date_text_o->format("Y-m-d");
+//			$event->end_date = strtotime($end_date_text." ".date_default_timezone_get());
+			$event->end_date = strtotime($end_date_text." UTC");
 			//$event->munged_end_date_string = $end_date_text." ".date_default_timezone_get();
 		} else {
 			$event->end_date = '';
