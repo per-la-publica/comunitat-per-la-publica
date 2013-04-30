@@ -123,7 +123,7 @@ function event_calendar_set_event_from_form($event_guid,$group_guid) {
 			$event->end_date = '';
 		}
 	
-		if ($event_calendar_times != 'no') {
+		if ($event_calendar_times != 'no' && $schedule_type!="all_day") {
 			$hour = get_input('start_time_hour','');
 			$minute = get_input('start_time_minute','');
 			$meridian = get_input('start_time_meridian','');
@@ -145,6 +145,9 @@ function event_calendar_set_event_from_form($event_guid,$group_guid) {
 				// This allows sorting by date *and* time.
 				$event->start_date += $event->start_time*60;
 			}
+		} else if ($schedule_type=="all_day"){
+			$event->end_time = '';
+			$event->start_time = '';
 		}
 	}
 	if ($event_calendar_spots_display == 'yes') {
@@ -1291,7 +1294,10 @@ function event_calendar_get_formatted_time($event) {
 	if ($event->end_date) {
 		$end_date = date($date_format,$event->end_date);
 	}
-	if ((!$event->end_date) || ($end_date == $start_date)) {
+	if($event->all_day && (($end_date == $start_date) || !$event->end_date)){
+		$time_bit = $start_date;
+	}
+	else if ((!$event->end_date) || ($end_date == $start_date)) {
 		if (!$event->all_day && $event_calendar_times) {
 			$start_date = event_calendar_format_time($start_date,$event->start_time,$event->end_time);
 		}
