@@ -15,9 +15,9 @@
    <div class=row-fluid>
 		<div id="carousel" class="carousel slide">
   			<div class="carousel-inner">   				
-    			<div class="active item"><img src="screenshots/2.png"></div>
-    			<div class="item"><img src="screenshots/4.png"></div>
-    			<div class="item"><img src="screenshots/3.png"></div>
+    			<div class="active item"><img src="screenshots/10.png"></div>
+    			<div class="item"><img src="screenshots/11.png"></div>
+    			<div class="item"><img src="screenshots/2.png"></div>
   			</div>
   			<!-- Carousel nav -->
   			<a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
